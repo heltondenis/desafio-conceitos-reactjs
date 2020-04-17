@@ -5,25 +5,26 @@
 }
 
 body {
+  font-family: sans-serif;
   font-size: 14px;
-}
-
-div {
-  width: 100%;
-  margin: 20px;
+  background-color: #131217;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-bottom: 50px;
 }
 
 div li {
   display: flex;
-  align-items: center;
-}
-
-div li + li {
-  margin-top: 15px;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 button {
-  background: #7159c1;
+  background: #6648c9;
   color: #fff;
   border: 0;
   padding: 10px 15px;
@@ -31,9 +32,41 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  border-radius: 10px;
 }
 
 div li button {
-  margin: 0 15px;
+  margin: -10px 15px;
   background: #ca4949;
+}
+
+.btn-add {
+  background-color: #0B0A0D;
+  margin: auto auto 0 auto;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  position: fixed;
+}
+
+div .navbar {
+  background-color: #0B0A0D;
+  margin: auto auto 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+div .navbar h2 {
+  color: #ffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button.btn-remove {
+  background: transparent;
+  outline:none
+}
+
+.icon-remove {
+  width: 20px;
 }
